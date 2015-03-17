@@ -15,7 +15,7 @@
   {% endif %}
 
   <div class="image">
-    <button class="btn btn-large quick-shop-btn">quick shop</button>
+    <a class="btn btn-large quick-shop-btn">quick shop</a>
     <a href="{{ url }}">          
       <img src="{% if product.images.size >= 1%}{{ product.featured_image | product_img_url: 'large' }}{% else %}{{ 'No_Image_2.png' | asset_url }}{% endif %}" alt="{{ product.title | escape  }}" />
     </a>
