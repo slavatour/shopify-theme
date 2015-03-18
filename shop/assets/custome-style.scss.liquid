@@ -3,27 +3,25 @@
     overflow: hidden;
     .quick-shop-btn {
       position: absolute;
-      top: -55%;
-      left: 18%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
       z-index: 100;
-//      border: solid 1px;
-//      border-radius: 5px;
-//      font-size: 1.2em;
-//      padding: 15px 25px;
-      -webkit-transition: top 0.3s;
-      -moz-transition: top 0.3s;
-      -o-transition: top 0.3s;
-      transition: top 0.3s;
+      -webkit-transition: opacity 0.3s;
+      -moz-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s;
     }
   }
   &:hover {
     .quick-shop-btn {
       cursor: pointer;
-      top: 50%;
-      -webkit-transition: top 0.6s;
-      -moz-transition: top 0.6s;
-      -o-transition: top 0.6s;
-      transition: top 0.6s;
+      opacity: 1;
+      -webkit-transition: opacity 0.6s;
+      -moz-transition: opacity 0.6s;
+      -o-transition: opacity 0.6s;
+      transition: opacity 0.6s;
     }
   }
 }
